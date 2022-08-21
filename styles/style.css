@@ -32,7 +32,7 @@ body{
     background-color: hsl(225, 100%, 94%);
     overflow-x: hidden;
 }
-section{
+main{
     width: 400px;
     background-color: white;
     margin-top: 42px;
@@ -45,21 +45,20 @@ img.illustrationImage{
     border-radius: 20px 20px 0 0;
     margin-top: -17px;
 }
-div.containerSummary{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-    margin: 35px auto 17.5px;
-    width: 300px;
-}
 h1{
     color: var(--neutralColor3);
     font-weight: 900;
+    margin-top: 35px !important;
 }
 p{
     color: var(--neutralColor2);
+    margin: 15px auto 17.5px !important;
+}
+h1,p{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 300px;
 }
 div.containerPlan{
     display: flex;
@@ -97,12 +96,9 @@ a.change:hover{
     color: #8C83D9;
     text-decoration: none;
 }
-div.containerButtons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+button{
+    display: block;
+    margin: auto;
 }
 button.payment{
     background-color: var(--primaryColor2);
@@ -113,6 +109,7 @@ button.payment{
     padding: 17px;
     border-radius: 15px;
     box-shadow: 0px 15px 19px 0px rgba(56, 41, 224, 0.19);
+    margin-bottom: 30px;
 }
 button.payment:hover{
     cursor: pointer;
@@ -149,13 +146,13 @@ button.cancel:hover{
     }
 }
 @media(max-width: 440px){
-    section{
+    main{
         width: 300px;
         background-color: white;
         margin-top: 42px;
         border-radius: 0 0 20px 20px;
     }
-    div.containerSummary{
+    h1,p{
         width: 230px;
     }
     div.containerPlan{
@@ -172,13 +169,13 @@ button.cancel:hover{
     }
 }
 @media(max-width: 340px){
-    section{
+    main{
         width: 250px;
         background-color: white;
         margin-top: 42px;
         border-radius: 0 0 20px 20px;
     }
-    div.containerSummary{
+    h1,p{
         width: 200px;
     }
     div.containerPlan{
