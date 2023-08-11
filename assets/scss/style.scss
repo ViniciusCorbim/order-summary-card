@@ -1,0 +1,120 @@
+@import "variables";
+@import "btn";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color6;
+  background-image: url(../images/patternBackgroundMobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  font-family: $font1;
+}
+
+main {
+  width: 90vw;
+  max-width: 400px;
+  background-color: $color-white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.164);
+  margin: 25px auto;
+  padding-bottom: 32px;
+  border-radius: 15px;
+  overflow: hidden;
+
+  section {
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+
+    article {
+      width: 90%;
+      margin: auto;
+
+      h1,
+      p {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2em;
+        color: $color5;
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 1em;
+        color: $color4;
+      }
+
+      div {
+        background-color: $color3;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.212);
+        width: 75%;
+        padding: 10px 5px;
+        border-radius: 15px;
+        margin: 20px auto;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1;
+        grid-template-rows: 4fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "img "
+          "plan"
+          "price"
+          "change";
+
+        img {
+          grid-area: img;
+          width: 75px;
+          padding-bottom: 10px;
+        }
+        span.plan {
+          grid-area: plan;
+          align-self: end;
+          color: $color5;
+          font-weight: 900;
+        }
+        span.price {
+          grid-area: price;
+          align-self: start;
+        }
+        button {
+          grid-area: change;
+          margin: 3px;
+          text-decoration: underline;
+        }
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        &.pay {
+          box-shadow: rgba(117, 106, 241, 0.19) 0px 15px 19px 0px;
+          margin: 31px auto;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import "responsive-elements";

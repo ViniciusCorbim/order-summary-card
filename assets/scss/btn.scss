@@ -1,0 +1,48 @@
+@mixin btn($background, $backgroundHover, $color) {
+  color: $color;
+  background-color: $background;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $backgroundHover;
+  }
+}
+
+@mixin btn-discreet($color, $colorHover) {
+  color: $color;
+
+  &:hover {
+    cursor: pointer;
+    color: $colorHover;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 1em;
+
+  &.btn-darkblue {
+    @include btn(
+      $background: $color2,
+      $backgroundHover: $color1,
+      $color: $color-white
+    );
+  }
+}
+
+.btn-discreet {
+  padding: 0;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 700;
+
+  &.btn-darkblue {
+    @include btn-discreet($color: $color2, $colorHover: $color1);
+  }
+
+  &.btn-gray {
+    @include btn-discreet($color: $color4, $colorHover: $color5);
+  }
+}

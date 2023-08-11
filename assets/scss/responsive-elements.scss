@@ -1,0 +1,51 @@
+@media screen and (min-width: 450px) {
+  body {
+    background-image: url(../images/patternBackgroundDesktop.svg);
+    background-repeat: repeat-x;
+  }
+
+  main {
+    section {
+      article {
+        div {
+          width: 95%;
+          padding: 10px;
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-template-areas:
+            "img plan change"
+            "img price change";
+
+          img {
+            grid-area: img;
+            width: 60px;
+            padding: 0;
+          }
+          span.plan {
+            grid-area: plan;
+            align-self: end;
+            color: $color5;
+            font-weight: 900;
+          }
+          span.price {
+            grid-area: price;
+            align-self: start;
+          }
+          button {
+            grid-area: change;
+            padding: 0;
+            margin: 0;
+            text-decoration: underline;
+          }
+        }
+
+        button.pay {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
