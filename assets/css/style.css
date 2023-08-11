@@ -120,30 +120,20 @@ main {
   main section article div {
     width: 95%;
     padding: 10px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "img plan change" "img price change"; }
     main section article div img {
-      grid-area: img;
       width: 60px;
       padding: 0; }
-    main section article div span.plan {
-      grid-area: plan;
-      align-self: end;
-      color: #1f2f56;
-      font-weight: 900; }
-    main section article div span.price {
-      grid-area: price;
-      align-self: start; }
-    main section article div button {
-      grid-area: change;
-      padding: 0;
-      margin: 0;
-      text-decoration: underline; }
   main section article button.pay {
     width: 95%; } }
+@media screen and (min-height: 750px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 /*# sourceMappingURL=style.css.map */
