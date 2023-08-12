@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: $color6;
+  background-color: $color2;
   background-image: url(../images/patternBackgroundMobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -20,11 +20,11 @@ body {
 
 main {
   width: 90vw;
-  max-width: 400px;
+  max-width: 420px;
   background-color: $color-white;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.164);
-  margin: 25px auto;
-  padding-bottom: 32px;
+  margin: 15px auto;
+  padding-bottom: 40px;
   border-radius: 15px;
   overflow: hidden;
 
@@ -36,7 +36,7 @@ main {
     }
 
     article {
-      width: 90%;
+      width: 87%;
       margin: auto;
 
       h1,
@@ -57,9 +57,9 @@ main {
 
       div {
         background-color: $color3;
-        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.212);
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.315);
         width: 75%;
-        padding: 10px 5px;
+        padding: 15px 5px;
         border-radius: 15px;
         margin: 20px auto;
         display: grid;
